@@ -1,0 +1,48 @@
+#container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+}
+
+#header {
+    background-color: #373535;
+    text-align: start;
+    padding: 50px;
+    color: #f2f2f2;
+}
+
+nav {
+    grid-area: nav;
+    overflow: hidden;
+    background-color: #080606;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+}
+
+#main-content {
+    grid-area: auto;
+    background-color: gray;
+    text-align: start;
+    padding: 120px;
+    overflow: hidden;
+}
+
+#aside-content {
+    float: right;
+}
+
+#footer {
+    text-align: center;
+    background-color: #080606;
+    padding: 70px;
+    color: white;
+}
+
