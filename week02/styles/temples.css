@@ -72,6 +72,15 @@ nav {
     margin: 0 auto;
     padding: 20px;
   }
+  #gallery {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+	  }
+	  .image {
+		width: 100%;
+		height: auto;
+	  }
   
   main h2 {
     text-align: center;

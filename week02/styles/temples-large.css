@@ -12,15 +12,14 @@
 	#menu {
 		display: none;
 	}
+	#gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+	  }
+	  .image {
+		width: 100%;
+		height: auto;
+	  }
 }
 
-#gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-}
