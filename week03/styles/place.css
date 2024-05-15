@@ -4,10 +4,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Playfair Display, sans-serif;
     display: flex;
     flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
     margin: auto;
     height: 100%;
 }
