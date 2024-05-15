@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 | Country Page</title>
+        <meta name="description" content="WDD 131 | Country Page">
+        <meta name="author" content="Jonathan Aloya">
+        <link rel="stylesheet" href="week03/styles/place.css">
+        <link rel="stylesheet" href="week03/styles/place-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <script src="week03/script/place.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Uganda</h1>
+            <div class="spacer"></div>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="week03/images/Gorilla.webp" media="(min-width:750px)">
+                    <img src="week03/images/Gorilla.webp" alt="Map of Uruguay">
+                </picture>
+                <div class="small-spacer"></div>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <div class="data-item">
+                    <p class="label">Area:</p>
+                    <p class="value">241,559 sq km</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Population:</p>
+                    <p class="value">49,732,018</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Capital:</p>
+                    <p class="value">Kampala</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Languages:</p>
+                    <p class="value">Luganda, Ateso, English</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Currency:</p>
+                    <p class="value">Shillings</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Time Zone:</p>
+                    <p class="value">EAT</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Calling Code:</p>
+                    <p class="value">+256</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Internet TLD:</p>
+                    <p class="value">.ug</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h2 class="weather-h2">Weather</h2>
+                <img class="weather-icon" src="week03/images/sun-rain-cloud.svg" alt="Mostly Sunny">
+                <div class="data-item">
+                    <p class="label">Temperature:</p>
+                    <p class="value">25&deg;C</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Conditions:</p>
+                    <p class="value">Mostly Sunny</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Wind:</p>
+                    <p class="value">18 km/h</p>
+                </div>
+
+                <div class="data-item">
+                    <p class="label">Wind Chill:</p>
+                    <p class="value"><span id="windChill">Calculating...</span></p>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear">yyyy</span> &#127808 Jonathan Aloya &#127808 Uganda</p>
+            <p><span id="lastModified">mm/dd/yyyy hh:mm:ss</span></p>
+        </footer>
+    </body>
+</html>
