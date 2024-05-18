@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation button {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+    #temple-cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+	  .image {
+		width: 100%;
+		height: auto;
+	  }
+}
+
