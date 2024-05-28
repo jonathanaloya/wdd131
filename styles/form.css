@@ -1,0 +1,150 @@
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-width: 400px;
+    width: 100%;
+    justify-content: center;
+  }
+  header{
+    background-color: #271a2b;
+    color: white;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: #e7dbfd; /* light lavender */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  
+  .form-group {
+    margin-bottom: 15px;
+    max-width: 350px;
+    border: none;
+  }
+  .form-group input:required{
+    border-left: solid 4px red;
+  }
+  .form-group input:required:valid{
+    border-left: solid 8px green;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    max-width: 400px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 6px;
+    padding: .75rem;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
+  
+  .rating label {
+    font-size: 24px;
+    color: #ffcc00; /* star color */
+  }
+  
+  .rating input {
+    display: block;
+  }
+  
+  .rating input + label:hover,
+  .rating input + label:hover ~ label {
+    color: #ff9900; /* star hover color */
+  }
+  
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    background-color: #a78bea; /* dark purple */
+    color: #ffffff;
+  
+  }
+  
+  .submit-btn:hover {
+    background-color: #271a2b; /* darker purple */
+  }
+  .pform {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.pform input {
+    padding: 0;
+}
+.pform input[type="text"] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  text-align:left;
+}
+.pform input[type="submit"] {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  border: solid 1px black;
+}
+  
+  footer {
+    text-align: center;
+    background-color: #3e2c41; /* dark purple */
+    color: #ffffff;
+    margin-top: .5rem;
+  }
+  
+
+  
