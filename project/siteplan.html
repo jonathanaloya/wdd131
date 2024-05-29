@@ -2,58 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form - WDD 131</title>
-    <meta name="description" content="My form page for Week 5 of WDD 131">
-    <meta name="author" content="Dylan Stephenson">
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans&display=swap" rel="stylesheet">
+    <title>Site Plan - Wellness Hub</title>
+    <link rel="stylesheet" href="siteplan.css">
 </head>
 <body>
-    <header>
-        <h1>Product Review</h1>
-    </header>
-    <main>
-        <form method="get" action="review.html" class="pform">
-            <div>Product Name</div>
-            <select aria-label="select"id="product-name" name="Product Name" required>
-                <option value="" selected disabled>Select a Product ...</option>
-            </select>
-            <div class="title">Overall Rating (required)</div>
-            <label class="rating-label">&star;<br /><input aria-label="input" id="1star" type="radio" name="rating" required></label>
-            <label class="rating-label">&star;&star;<br /><input aria-label="input" id="2star" type="radio" name="rating" required></label>
-            <label class="rating-label">&star;&star;&star;<br /><input aria-label="input" id="3star" type="radio" name="rating" required></label>
-            <label class="rating-label">&star;&star;&star;&star;<br /><input aria-label="input" id="4star" type="radio" name="rating" required></label>
-            <label class="rating-label">&star;&star;&star;&star;&star;<br /><input aria-label="input" id="5star" type="radio" name="rating" required></label>
-            <div id="install-date">Date of Installation</div>
-            <label><input aria-label="input" type="date" name="installation" required></label>
-            <div class="title">Which features did you find useful in this product?</div><span>check all that apply</span>
-            <div>(<i>Check all that apply</i>)</div>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="durability" name="Durability" value="yes"> Durability<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="ease-use" name="Ease of Use" value="yes"> Ease of Use<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="performance" name="Performance" value="yes"> Performance<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="design" name="Design" value="yes"> Design<br></label>
-            <div class="title">Written Review (<i>optional</i>)</div>
-            <textarea aria-label="text area" id="review-box" name="Written Review"></textarea>
-            <div class="title">Your Name (<i>optional</i>)</div>
-            <input aria-label="input" type="text" id="name-input" name="your name">
-            <input aria-label="input" type="submit" id="submit-button" value="Leave Review">
-        </form>
-    </main>
-    <footer>
-        <p>
-            ©<span id="currentyear"></span>
-            🎹
-            Dylan Stephenson
-            🎹
-            Utah
-        </p>
-        <p id="lastModified">
-
-        </p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Site Plan: Wellness Hub</h1>
+        </header>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Wellness Hub</strong></p>
+            <p>This name represents a website dedicated to promoting physical activity and nutrition wellness. It aims to be a central resource for individuals seeking to improve their health through exercise and balanced diet recommendations.</p>
+        </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The purpose of Wellness Hub is to provide comprehensive resources on physical activity and nutrition. This includes workout routines, dietary plans, expert articles, and a community forum for users to share their experiences and advice.</p>
+        </section>
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What are some effective workout routines for beginners?</li>
+                <li>How can I plan a balanced diet that suits my lifestyle?</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Color Schema</h2>
+            <p>The selected color schema for Wellness Hub includes:</p>
+            <ul>
+                <li><span class="color-box primary-color"></span> Primary Color: #4CAF50 (Used for headings, links, and buttons)</li>
+                <li><span class="color-box secondary-color"></span> Secondary Color: #8BC34A (Used for background colors, accents, and hover effects)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Typography</h2>
+            <p>The selected fonts for Wellness Hub are:</p>
+            <ul>
+                <li>Heading Font: <span class="heading-font">Lato</span></li>
+                <li>Body Font: <span class="body-font">Open Sans</span></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Wireframe</h2>
+            <p>Below are the wireframes for the home page layout in both mobile and desktop views:</p>
+            <div class="wireframe">
+                <img src="wireframe-mobile.jpg" alt="Mobile Wireframe">
+                <img src="wireframe-desktop.jpg" alt="Desktop Wireframe">
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Wellness Hub. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
