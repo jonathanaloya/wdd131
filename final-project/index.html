@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wellness Hub - Home</title>
+    <meta name="description" content="Promoting physical activity and nutrition wellness.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="Scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Wellness Hub</h1>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="close-icon" id="close-icon">&#10005;</div>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Wellness Image" loading="lazy">
+            <p>Physical wellness is an essential aspect of overall health, focusing on maintaining a healthy body through proper nutrition, regular exercise, and managing stress. It’s about making choices that prevent illnesses and enable us to live a more balanced and fulfilling life. Here are some key components of physical wellness:</p>
+            <button onclick="learnMore()">Learn More</button>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="images/workout1.jpg" alt="Effective Workout Routines" loading="lazy">
+                <div class="overlay">
+                    <a href="workouts.html"><button>Learn More</button></a>
+                </div>
+                <h3>Effective Workout Routines</h3>
+                <p>Discover workout plans tailored to your fitness level and goals.</p>
+            </div>
+            <div class="feature">
+                <img src="images/nutrition1.jpg" alt="Balanced Dietary Plans" loading="lazy">
+                <div class="overlay">
+                    <a href="nutrition.html"><button>Learn More</button></a>
+                </div>
+                <h3>Balanced Dietary Plans</h3>
+                <p>Plan your meals with expert-recommended diet plans.</p>
+            </div>
+            <div class="feature">
+                <img src="images/community1.jpg" alt="Community Support" loading="lazy">
+                <div class="overlay">
+                    <button>Learn More</button>
+                </div>
+                <h3>Community Support</h3>
+                <p>Join our community and share your wellness journey.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <button id="contact-button">Join Our Community</button>
+        </section>
+        <section class="contact">
+            <div id="contact-form-container" class="contact-form-container">
+                <div class="form-header">
+                    <h2>Join Community</h2>
+                    <button id="form-close-button" class="close-button">&#10005;</button>
+                </div>
+                <form id="contact-form">
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" id="FirstName" name="FirstName" autocomplete="given-name" required>
+                    <label for="LastName">Last Name:</label>
+                    <input name="LastName" id="LastName" type="text" autocomplete="family-name" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <fieldset>
+                        <legend>Select Workouts:</legend>
+                        <div id="workouts-container">
+                            <!-- Checkboxes will be added dynamically here -->
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="confirmation-message" style="display: none;"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#" target="_blank" class="social-icon contact-icon" data-tooltip="Contact">
+                <img src="images/contact-mail.png" alt="Contact">
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" data-tooltip="Twitter">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" data-tooltip="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <p class="mody">Last Modified: <span id="last-modified"></span></p>
+        <a href="attributions.html">Attributions</a>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
