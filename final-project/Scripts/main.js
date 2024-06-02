@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const lastModifiedElement = document.getElementById('last-modified');
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = document.lastModified;
+    } else {
+        console.error('Element with ID "last-modified" not found.');
+    }
+});
+
 document.getElementById('last-modified').textContent = document.lastModified;
 
 function learnMore() {
