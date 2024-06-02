@@ -13,6 +13,7 @@
 
 .nutrition-item {
     position: relative;
+    background-color: rgb(233, 253, 241);
 }
 
 .nutrition-image img {
