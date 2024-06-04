@@ -45,6 +45,22 @@ if (document.title === "Review Page") {
 function GetReviews() {
   return JSON.parse(this.localStorage.getItem("numReviews"))
 }
+// review.html
+
+// Get the number of reviews completed from localStorage
+var reviewsCompleted = localStorage.getItem("reviewsCompleted");
+
+// Check if reviewsCompleted is null or undefined
+if (reviewsCompleted === null || reviewsCompleted === undefined) {
+  // Set reviewsCompleted to 0 if it is null or undefined
+  reviewsCompleted = 0;
+}
+
+// Increment the number of reviews completed
+reviewsCompleted++;
+
+// Store the updated value in localStorage
+localStorage.setItem("reviewsCompleted", reviewsCompleted);
 
 function DisplayReviews(reviews) {
   reviewsDisplay.innerHTML = reviews;
